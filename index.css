@@ -1,0 +1,82 @@
+@font-face {
+    font-family: spaceGrotesk;
+    src: url(assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: spaceGrotesk;
+    font-weight: 500;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-main-mobile {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 80%;
+    height: 30px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    padding: 1rem;
+}
+
+form label {
+    margin-left: 2rem;
+    margin-bottom: 10px;
+}
+
+.date-and-cvc-inputs{
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    padding: 20px;
+    justify-self: center;
+    height: 30px;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.cvc {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 42%;
+    justify-self: center;
+    align-self: center;
+}
+
+#date-year {
+    margin-left: 10px;
+}
+
+button {
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    align-self: center;
+    margin-bottom: 2rem;
+}
