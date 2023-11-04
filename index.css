@@ -56,7 +56,7 @@ form label {
     justify-self: center;
     height: 30px;
     align-self: center;
-    margin-left: 1rem;
+    margin-left: 0.8rem;
 }
 
 .cvc {
@@ -67,6 +67,8 @@ form label {
     justify-self: center;
     align-self: center;
 }
+
+
 
 #date-year {
     margin-left: 10px;
