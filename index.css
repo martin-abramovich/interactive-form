@@ -8,6 +8,11 @@
     font-weight: 500;
     font-size: 16px;
 }
+
+main {
+    position: relative;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +22,23 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+    z-index: 0;
+}
+
+.bg-card-back {
+    width: 75%;
+    z-index: 1;
+    position: absolute;
+    top: 2rem;
+    left: 70px;
+}
+
+.bg-card-front {
+    width: 75%;
+    z-index: 2;
+    position: absolute;
+    top: 7rem;
+    left: 20px;
 }
 
 form {
@@ -43,9 +65,19 @@ form label {
     margin-bottom: 10px;
 }
 
-.date-and-cvc-inputs{
+.date-and-cvc-inputs {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.date-and-cvc-labels {
+    display: flex;
+    flex-direction: row;
+}
+
+.cvc-label {
+    width: 0;
 }
 
 .date {
@@ -53,22 +85,17 @@ form label {
     flex-direction: row;
     width: 40%;
     padding: 20px;
-    justify-self: center;
     height: 30px;
-    align-self: center;
-    margin-left: 0.8rem;
 }
 
 .cvc {
     height: 30px;
     display: flex;
     flex-direction: row;
-    width: 42%;
+    width: 45%;
     justify-self: center;
     align-self: center;
 }
-
-
 
 #date-year {
     margin-left: 10px;
@@ -82,8 +109,15 @@ button {
     border-radius: 5px;
     border-style: none;
     align-self: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-.attribution { font-size: 11px !important; text-align: center; }
-.attribution a { font-size:11px; color:  hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 8px !important;
+    text-align: center;
+}
+
+.attribution a {
+    font-size: 8px;
+    color: hsl(228, 45%, 44%);
+}
